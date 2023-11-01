@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!-- HTML5文檔聲明 -->
+<html lang="zh-Hant-TW">
+    <!-- 繁體中文版本 -->
+<head>
+    <meta charset="UTF-8">
+    <!-- 編碼種類不寫網頁會變亂碼 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 網頁要手機板就醫定要寫這個 -->
+    <title>Document</title>
+    <!-- 網頁標籤名 -->
+    <style>
+        .bg{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            background-image:  url(../01/pig.png);
+            background-size:cover ;
+        }
+        /* 背景圖片練習 */
+        .box1{
+            width:200px ;
+            height:200px ;
+            background-color:rgb(137, 165, 240);
+            border-bottom:7px blueviolet ;
+            border: 5px dashed orange ;
+            box-shadow: 7px 8px 12px -2px rgba(235, 116, 6, 0.83);
+            -webkit-box-shadow: 7px 8px 12px -2px rgba(54,126,193,0.83);
+            -moz-box-shadow: 7px 8px 12px -2px rgba(54,126,193,0.83);
+            background: #00ffc3;
+            background: linear-gradient(90deg,#00ffc3 0%, #2f6fb4 80%);
+            background: -webkit-linear-gradient(90deg,#00ffc3 0%, #2f6fb4 80%);
+            background: -moz-linear-gradient(90deg,#00ffc3 0%, #2f6fb4 80%);
+            /* 
+            border是邊線的意思可以查詢線的重類
+            border-width: 5px;
+            border-style: inset;
+            border-color: orange; 
+            */
+            /* generator產生器的意思例box-shadow generator */
+        }
+        
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            margin:20px 50px;
+            padding-top: 50px;
+            display: inline;
+            /* 
+            margin是間距可以調整元素之間的距離
+            速寫法順序 上下20px 左右50px
+            順時鐘方向 上右下左
+            margin-bottom:10px ;
+            margin-top: 30px;
+            margin-left: 100px;
+            bottom下top上Left左 */
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: bisque;
+        }
+        .box4{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            margin-top: 30px;
+        }
+        .span_box{
+            padding:20px ;
+            margin-right: 30px;
+            display: block;
+            /*  displa blocky可以把行內變塊級 */
+        }
+        .a1{
+            width: 200px;
+            margin-left: 100px;
+        }
+        .box5{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            display: inline-block;
+            padding: 50px;
+            box-sizing: border-box;
+            /* box-sizing: border-box可以讓設定不影響長寬設定 */
+        }
+        .box6{
+            width: 200px;
+            height: 200px;
+            background-color: salmon;
+            display: inline-block;
+             /*  displa inline-block可以把塊級變行內 */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class=".bg"></div>
+    <div class="box1"></div> -->
+    <hr>
+    <div class="box2">
+        <div class="box4"></div>
+    </div>
+    <div class="box3"></div>
+    <!-- 只有塊級元素能包行內元素 -->
+    <hr>
+    <span class="span_box">
+        內容
+    </Span>
+    <img class="a1" src="../01/pig.png" alt="">
+    <div class="box5"></div>
+    <div class="box6"></div>
+</body>
+</html>
