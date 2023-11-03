@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: url(https://citycreator.com/bgs/3/bg_5.gif);
+            /* 背景圖片置入 */
+            background-repeat: repeat-x ;
+            /* x軸連續 css屬性position位置*/
+        }
+        .center_point{
+            width: 15px;
+            height:15px;
+            background-color: yellow;
+            border-radius: 50%;
+            /* 圓角設定50%就會是圓 */
+            top: 32px;
+            left: 167px;
+            position: relative;
+        }
+        .object1{
+            background: url(https://citycreator.com/blocks/3/build_18.gif);
+            background-repeat: no-repeat ;
+            width: 50px;
+            height: 50px;
+            top: 20px;
+            left: 150px;
+            position: absolute;
+            /* x軸連續 css屬性position設定中心點位置 */
+        }
+        .object2{
+            background: url(https://citycreator.com/blocks/3/build_19.gif);
+            background-repeat: no-repeat ;
+            width: 50px;
+            height: 50px;
+            top: -30px;
+            left: 300px;
+            position: absolute;
+            /* x軸連續 css屬性position位置 */
+        }
+
+        .object3{
+            background: url(https://citycreator.com/blocks/3/build_20.gif);
+            background-repeat: no-repeat ;
+            width: 50px;
+            height: 50px;
+            top: 42px;
+            left: 180px;
+            position: absolute;
+            /* x軸連續 css屬性position位置 */
+        }
+        .object4{
+            background: url(https://citycreator.com/blocks/3/build_9.gif);
+            background-repeat: no-repeat ;
+            width: 50px;
+            height: 50px;
+            top: -11px;
+            left: 297px;
+            position: absolute;
+            z-index: -15;
+    }
+    .box{
+        color: aquamarine;
+    }
+    .inner_box{
+        width: 30px;
+        height: 30px;
+        background-color: #fff;
+        position: relative;
+        bottom: 0;
+        right: 0;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="box">!!hola!!<br>
+        <div class="inner_box"></div>
+        天黑請閉眼<br>
+        狼人出來了<br>
+        村民已睡死<br>
+        勇士在哪裡<br>
+        法師守城堡<br>
+        皇族沒問題<br>
+    </div>
+    <div class="center_point"> 
+        <div class="object1"></div>
+        <div class="object2"></div>
+        <div class="object3"></div>
+        <div class="object4"></div>
+    </div>
+
+</body>
+</html>
